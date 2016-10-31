@@ -1,0 +1,79 @@
+/* page style */
+header, footer, section, div{
+  max-width: 900px;
+  align-self: center;
+  font-family: Whitney-Light;
+  padding: 10px 10%;
+  margin: auto;
+}
+
+/* header style */
+header a{
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+}
+header a:hover{
+  color:black;
+}
+.logo_img{
+  float: left;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.nav li{
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav{
+  float: right;
+}
+.nav .bold{
+  font-weight: bold;
+}
+
+/* paragraph style */
+.main_des p{
+  font-size: 32px;
+  margin: 60px 0px;
+  text-align: center;
+}
+.page_des h1{
+  float: left;
+  margin-right: 10%;
+  display: inline-block;
+  font-size: 32px;
+  width: 20%;
+}
+.page_des p{
+  font-size: 18px;
+  float: right;
+  display: inline-block;
+  width: 65%;
+  line-height: 200%;
+}
+/* about style */
+.chong_img{
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  padding: 20px;
+}
+.about{
+  display: inline-block;
+  width: 60%;
+  float: right;
+  padding: 30px 0px;
+}
+
+/* footer style */
+.footer_img{
+  width: 25px;
+  height: 25px;
+  margin: 10px 15px;
+}
+.copyright{
+  text-align: right;
+  float: right;
+}
