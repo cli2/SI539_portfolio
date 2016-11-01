@@ -69,10 +69,11 @@ header a:hover{
   margin: 20px 0;
 
 }
-.cover img{
+/*Hardcode for each viewport*/
+/*.cover img{
   width: 200px;
   height: 200px;
-}
+}*/
 .cover img:hover{
   opacity: 0.5;
 }
