@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Graphics</title>
+    <link rel="shortcut icon" href="p_image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="p_css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
@@ -21,13 +23,55 @@
       </nav>
     </header>
     <hr width='100%'>
-    <section class="page_des">
+    <section class="page_des clearfix">
       <h1>Graphics</h1>
       <p>
         I am an amateur graphic designer in webpage interface, mobile app interface, and posters.
-        My interst also lies in paintings, art modelings, and sculptures.
+        My interest also lies in paintings, art modelings, and sculptures.
         The goal of graphics is to convey communication in an effective way through different mediums.
       </p>
+    </section>
+
+    <section>
+      <div class="w3-content w3-display-container">
+        <div class="slide w3-content w3-display-container">
+          <img class="#" src="p_image/p_graphics/web_amp.jpg" alt="webpage">
+          <p>
+            Webpage design for Marshall amplifier.
+          </p>
+        </div>
+        <div class="slide w3-content w3-display-container">
+          <img class="#" src="p_image/p_graphics/product_amp.jpg" alt="product">
+          <p>
+            Product design for Marshall amplifier.
+          </p>
+        </div>
+        <!-- <img class="slide" src="p_image/p_graphics/web_amp.jpg" alt="webpage">
+        <img class="slide" src="p_image/p_graphics/product_amp.jpg" alt="product"> -->
+
+        <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
     </section>
 
     <footer>
