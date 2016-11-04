@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Chong Li's Portfolio</title>
+    <script src='p_js/js.js'></script>
     <link rel="shortcut icon" href="p_image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="p_css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-    <div class="index half"></div>
+    <div class="index half" id='index'></div>
     <div class="main_des">
       <div class="right">
         Hi, I’m <a href="about.html"><b>Chong Li</b></a>,<br>
-        <br>UX and Architecture <a href="design.html"><b>Designer</b></a>,<br>
-        <br>IoT and Digital Fabrication <a href="make.html"><b>Maker</b></a>,<br>
-        <br>and Amateur <a href="graphics.html"><b>Graphic</b></a> Designer.<br>
+        <br>UX and Architecture <a onmouseover="cover_d()" onmouseout="cover_i()" href="design.html"><b>Designer</b></a>,<br>
+        <br>IoT and Digital Fabrication <a onmouseover="cover_m()" onmouseout="cover_i()" href="make.html"><b>Maker</b></a>,<br>
+        <br>and Amateur <a onmouseover="cover_g()" onmouseout="cover_i()" href="graphics.html"><b>Graphic</b></a> Designer.<br>
       </div>
     </div>
     <header class="index_header">
       <a href="index.html">
         <img class='logo_img' src="p_image/logo.png" alt="logo of Chong Li" />
       </a>
-      <nav class="nav nav_bread">
+      <nav class="nav nav_bread_index">
         <img class="bread_img" src="p_image/bread.png" alt="nav bread icon" />
       </nav>
       <nav class="nav nav_hide">

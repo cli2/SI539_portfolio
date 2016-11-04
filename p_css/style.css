@@ -19,6 +19,10 @@ header a:hover{
 }
 /*header{
   position: fixed;
+  top:0;
+}
+.hr_fixed{
+  position: fixed;
 }*/
 .logo_img{
   float: left;
@@ -49,7 +53,7 @@ header a:hover{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.nav_bread:hover + .nav_hide{
+.nav_bread_index:hover + .nav_hide{
   display: inline-block;
   padding-right: 20px;
 }
@@ -57,16 +61,21 @@ header a:hover{
   display: inline-block;
   padding-right: 20px;
 }
+.nav_bread{
+  display: none;
+}
 
 /* paragraph style */
 .index_header{
   max-width: 100%;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .index{
   /*background-color: blue;*/
-  background: url("cover.jpg") no-repeat 50%;
+  background-image: url("cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   /*background-attachment: fixed;*/
   /*background-position:left;*/
@@ -130,12 +139,6 @@ header a:hover{
   width: 65%;
   line-height: 200%;
 }
-.page_des .right{
-  font-size: 18px;
-  float: right;
-  width: 65%;
-  line-height: 200%;
-}
 
 .clearfix:after {
   content: '.';
@@ -182,7 +185,7 @@ header a:hover{
 }
 
 /* about style */
-.chong_img{
+/*.chong_img{
   width: 25%;
   height: auto;
   display: inline-block;
@@ -195,7 +198,7 @@ header a:hover{
   padding: 30px 0px;
   font-size: 18px;
   line-height: 200%;
-}
+}*/
 
 /* footer style */
 footer{
@@ -260,7 +263,7 @@ footer{
   z-index:1;
   border-radius:50%;
   cursor:pointer;
-  font-size:24px;
+  font-size:18px;
   opacity: 0.3;
 }
 .floating{
@@ -290,4 +293,40 @@ footer{
   position:relative;
   padding: 20px;
   /*background-color: #f4f4f4;*/
+}
+
+/*responsive design*/
+@media only screen and (max-width: 800px){
+  .nav li{display: none;}
+  .nav_bread{display: inline-block;}
+  .bread_img, .logo_img{
+    width: 30px;
+    height: 30px;
+  }
+  .page_des h1{font-size: 28px;}
+  .page_des p{font-size: 14px;}
+  .right{font-size: 28px;}
+}
+@media only screen and (max-width: 500px){
+  .nav_bread{display: inline-block;}
+  .bread_img, .logo_img{
+    width: 25px;
+    height: 25px;
+  }
+  .page_des h1{
+    font-size: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .page_des p{
+    font-size: 12px;
+    float: left;
+    width: 100%;
+  }
+  .half, .main_des{width: 100%;}
+  .main_des{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
 }
