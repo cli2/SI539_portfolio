@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Chong Li's Portfolio</title>
-    <script src='p_js/js.js'></script>
+
     <script src='p_js/jquery-3.1.1.min.js'></script>
+    <script src='p_js/js.js'></script>
     <link rel="shortcut icon" href="p_image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="p_css/style.css" media="screen" title="no title">
@@ -16,7 +17,7 @@
     <div class="main_des">
       <div class="right">
         Hi, I’m
-        <br><a href="about.html"><b>Chong</b></a><br>
+        <br><a onmouseover="cover_a()" onmouseout="cover_i()" href="about.html"><b>Chong</b></a><br>
         <br>ux and architecture
         <br><a onmouseover="cover_d()" onmouseout="cover_i()" href="design.html"><b>Designer</b></a><br>
         <br>digital fabrication
@@ -41,7 +42,6 @@
         </ul>
       </nav>
     </header>
-    <hr width='100%' style="visibility: hidden">
     <div class="full" id='full' onclick='show_page()'>
       <ul>
         <li><a href="design.html">design</a></li>
