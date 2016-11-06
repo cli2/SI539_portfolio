@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <title>Chong Li's Portfolio</title>
     <script src='p_js/js.js'></script>
+    <script src='p_js/jquery-3.1.1.min.js'></script>
     <link rel="shortcut icon" href="p_image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="p_css/style.css" media="screen" title="no title">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="p_css/bootstrap.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
     <div class="index half" id='index'></div>
     <div class="main_des">
       <div class="right">
-        Hi, I’m <a href="about.html"><b>Chong Li</b></a>,<br>
-        <br>UX and Architecture <a onmouseover="cover_d()" onmouseout="cover_i()" href="design.html"><b>Designer</b></a>,<br>
-        <br>IoT and Digital Fabrication <a onmouseover="cover_m()" onmouseout="cover_i()" href="make.html"><b>Maker</b></a>,<br>
-        <br>and Amateur <a onmouseover="cover_g()" onmouseout="cover_i()" href="graphics.html"><b>Graphic</b></a> Designer.<br>
+        Hi, I’m
+        <br><a href="about.html"><b>Chong</b></a><br>
+        <br>ux and architecture
+        <br><a onmouseover="cover_d()" onmouseout="cover_i()" href="design.html"><b>Designer</b></a><br>
+        <br>digital fabrication
+        <br><a onmouseover="cover_m()" onmouseout="cover_i()" href="make.html"><b>Maker</b></a><br>
+        <br>and amateur
+        <br><a onmouseover="cover_g()" onmouseout="cover_i()" href="graphics.html"><b>Illustrator</b></a>
       </div>
     </div>
     <header class="index_header">
@@ -24,7 +30,7 @@
         <img class='logo_img' src="p_image/logo.png" alt="logo of Chong Li" />
       </a>
       <nav class="nav nav_bread_index">
-        <img class="bread_img" src="p_image/bread.png" alt="nav bread icon" />
+        <img onclick="show_nav()" class="bread_img" src="p_image/bread.png" alt="nav bread icon" />
       </nav>
       <nav class="nav nav_hide">
         <ul>
@@ -36,6 +42,14 @@
       </nav>
     </header>
     <hr width='100%' style="visibility: hidden">
+    <div class="full" id='full' onclick='show_page()'>
+      <ul>
+        <li><a href="design.html">design</a></li>
+        <li><a href="make.html">make</a></li>
+        <li><a href="graphics.html">graphics</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
 
 
     <footer>

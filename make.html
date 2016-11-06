@@ -4,28 +4,39 @@
     <meta charset="utf-8">
     <title>Make</title>
     <link rel="shortcut icon" href="p_image/logo.png">
+    <script src='p_js/js.js'></script>
+    <script src='p_js/jquery-3.1.1.min.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="p_css/style.css" media="screen" title="no title">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="p_css/bootstrap.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
-    <header class="#">
+    <header class='nav-down'>
       <a href="index.html">
         <img class='logo_img' src="p_image/logo.png" alt="logo of Chong Li" />
       </a>
       <nav class="nav nav_bread">
-        <img onclick="show_nav()" class="bread_img" src="p_image/bread.png" alt="nav bread icon" />
+        <a href="#"><img  class="bread_img" onclick="show_nav()" src="p_image/bread.png" alt="nav bread icon" /></a>
       </nav>
       <nav class="nav">
         <ul>
           <li><a href="design.html">design</a></li>
-          <li><a href="make.html" class='bold'>make</a></li>
+          <li><a href="make.html"  class='bold'>make</a></li>
           <li><a href="graphics.html">graphics</a></li>
-          <li><a href="about.html" >about</a></li>
+          <li><a href="about.html">about</a></li>
         </ul>
       </nav>
     </header>
     <hr width='100%'>
+    <div class="full" id='full' onclick='show_page()'>
+      <ul>
+        <li><a href="design.html">design</a></li>
+        <li><a href="make.html">make</a></li>
+        <li><a href="graphics.html">graphics</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
 
     <section class="page_des clearfix">
         <h1>Make</h1>
@@ -35,10 +46,10 @@
           I seeks to bridge the physical objects and create the internet between them by the means of designing and making.
         </p>
     </section>
-    <section>
-      <div class="col-lg-4 col-md-6 cover">
+    <section class="clearfix">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cover">
         <a href="timber.html">
-          <img src="p_image/p_cover/timber-1.jpg" class="img-responsive" alt="Scripted Timber" />
+          <img src="p_image/p_cover/timber-1.jpg" id = "test" class="img-responsive" alt="Scripted Timber" />
           <p class='cover_title'>
             Scripted Timber
           </p>
@@ -48,7 +59,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 cover">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cover">
         <a href="lighting.html">
           <img src="p_image/p_cover/lighting-1.jpg" class="img-responsive" alt="Interactive Ground" />
           <p class='cover_title'>
@@ -60,7 +71,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 cover">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cover">
         <a href="lujiazui.html">
           <img src="p_image/p_cover/lujiazui.jpg" class="img-responsive" alt="Synecdoche Lujiazui" />
           <p class='cover_title'>
@@ -72,7 +83,7 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-md-6 cover">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cover">
         <a href="particle.html">
           <img src="p_image/p_cover/particle.jpg"  class="img-responsive" alt="Particle Hut" />
         <p class='cover_title'>

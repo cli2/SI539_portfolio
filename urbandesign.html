@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Graphics</title>
+    <title>Urban Design</title>
     <link rel="shortcut icon" href="p_image/logo.png">
     <script src='p_js/js.js'></script>
     <script src='p_js/jquery-3.1.1.min.js'></script>
@@ -21,13 +21,14 @@
       </nav>
       <nav class="nav">
         <ul>
-          <li><a href="design.html">design</a></li>
+          <li><a href="design.html" class='bold'>design</a></li>
           <li><a href="make.html">make</a></li>
-          <li><a href="graphics.html"  class='bold'>graphics</a></li>
+          <li><a href="graphics.html">graphics</a></li>
           <li><a href="about.html">about</a></li>
         </ul>
       </nav>
     </header>
+    <hr width='100%'>
     <div class="full" id='full' onclick='show_page()'>
       <ul>
         <li><a href="design.html">design</a></li>
@@ -36,70 +37,19 @@
         <li><a href="about.html">about</a></li>
       </ul>
     </div>
+
     <section class="page_des clearfix">
-      <h1>Graphics</h1>
+      <h1>Urban Design</h1>
       <p>
-        I am an amateur graphic designer in webpage interface, mobile app interface, and posters.
-        My interest also lies in paintings, art modelings, and sculptures.
-        The goal of graphics is to convey communication in an effective way through different mediums.
+        I am still working on the content of this page.<br>
       </p>
     </section>
 
-    <section>
-      <div class="content clearfix">
-        <div class="slide content">
-          <img src="p_image/p_graphics/web_amp.jpg" alt="webpage">
-          <p>
-            Webpage design for Marshall amplifier.
-          </p>
-        </div>
-        <div class="slide content">
-          <img src="p_image/p_graphics/product_amp.jpg" alt="product">
-          <p>
-            Product design for Marshall amplifier.
-          </p>
-        </div>
-        <div class="slide content">
-          <img src="p_image/p_graphics/poster.jpg" alt="hospital poster">
-          <p>
-            Poster design for recruiting hospital volunteers.
-          </p>
-        </div>
-        <div class="slide content">
-          <img src="p_image/p_graphics/postcard.jpg" alt="hospital post card">
-          <p>
-            Postcard design for recruiting hospital volunteers.
-          </p>
-        </div>
-        <!-- <img class="slide" src="p_image/p_graphics/web_amp.jpg" alt="webpage">
-        <img class="slide" src="p_image/p_graphics/product_amp.jpg" alt="product"> -->
-
-        <a class="floating displayleft" onclick="plusDivs(-1)">&#10094;</a>
-        <a class="floating displayright" onclick="plusDivs(1)">&#10095;</a>
-      </div>
-
-      <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("slide");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
+    <section class="back_main">
+      <hr width='100%'>
+      <a href="design.html">Back to Design</a>
     </section>
-
-    <footer id='graphic_footer'>
+    <footer>
       <hr width='100%'>
       <a href="https://www.linkedin.com/in/jonlichong" target="_blank">
         <img class='footer_img' src="p_image/linkedin.png" alt="linkedin of Chong Li" />

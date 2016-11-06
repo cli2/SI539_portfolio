@@ -3,12 +3,86 @@ header, footer, section{
   max-width: 1200px;
   align-self: center;
   font-family: futura-light;
-  padding: 10px 10%;
-  margin: auto;
-  margin-bottom: 20px;
+  padding: 0px 10%;
+  margin: 0 auto;
+}
+header{
+  border-bottom: 1px solid #eee;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* header style */
+header{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+.nav-down{
+  top: 0;
+}
+.nav-up{
+  top: -70;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #cc5350;
+    color:#fff;
+    z-index: 1000;
+    height: 200px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    text-align:center;
+    line-height:160px;
+
+}
+.header.shrink {
+    height: 100px;
+    line-height:80px;
+}
+.header h1
+{
+    font-size:30px;
+    font-weight:normal;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header.shrink h1
+{
+    font-size:24px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 header a{
   text-decoration: none;
   color: grey;
@@ -17,25 +91,23 @@ header a{
 header a:hover{
   color:black;
 }
-/*header{
-  position: fixed;
-  top:0;
-}
-.hr_fixed{
-  position: fixed;
-}*/
 .logo_img{
   float: left;
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  /*margin-bottom: 10px;*/
 }
 .nav li{
   display: inline-block;
-  margin: 20px 20px;
+  margin: 0px 20px;
+  margin-top: 10px;
 }
+/*.nav li a{
+  line-height: 60px;
+  text-align: center;
+}*/
 .nav{
   float: right;
   height: 40px;
@@ -50,7 +122,7 @@ header a:hover{
 .bread_img{
   width: 40px;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 .nav_bread_index:hover + .nav_hide{
@@ -67,13 +139,15 @@ header a:hover{
 
 /* paragraph style */
 .index_header{
+  background-color: rgba(0, 0, 0, 0);
   max-width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+  border-bottom: 0;
 }
 .index{
   /*background-color: blue;*/
-  background-image: url("cover.jpg");
+  background-image: url("../p_image/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,6 +165,40 @@ header a:hover{
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
+.full{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0;
+  -webkit-transition:.5s;
+  transition: .5s ;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+.full ul{
+  width: 100%;
+  font-size: 40px;
+  font-family: futura;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 250%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  list-style-type: none;
+}
+.full ul li a{
+  color: rgb(100, 100, 100);;
+}
+.full ul li a:hover{
+  color: black;
+}
 .main_des{
   width: 50%;
   position: absolute;
@@ -102,14 +210,28 @@ header a:hover{
 }
 .right{
   width: 80%;
-  font-family: futura;
-  font-size: 32px;
+  font-family: futura-light;
+  line-height: 180%;
+  font-size: 24px;
   text-align: center;
   margin: auto;
   padding: 0 20px;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
+  color: grey;
+}
+.right b{
+  font-size: 38px;
+  color: black;
+  opacity: 0.8;
+  border-bottom: 5px solid skyblue;
+}
+.right b:hover{
+  font-size: 40px;
+}
+.right a:hover{
+  text-decoration: none;
 }
 .main_des .left{
   width: 50%;
@@ -122,7 +244,7 @@ header a:hover{
   height: auto;
 }
 .page_des{
-  margin-top: 30px;
+  margin-top: 80px;
   height: auto;
 }
 .page_des h1{
@@ -132,6 +254,8 @@ header a:hover{
   font-size: 40px;
   width: 15%;
   font-weight: bold;
+  /*margin-top: 0;*/
+  margin-bottom: 0;
 }
 .page_des p{
   font-size: 18px;
@@ -155,9 +279,8 @@ header a:hover{
 
 .cover img{
   padding: 8%;
-  -webkit-transition: .6s ease-in-out;
-	transition: .6s ease-in-out;
-
+  -webkit-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
 }
 .cover img:hover{
   opacity: 0.5;
@@ -175,6 +298,7 @@ header a:hover{
   text-align: center;
   position: relative;
   bottom: 200px;
+  /*line-height: 200px;*/
   opacity: 0.3;
 }
 .cover img:hover .cover_des{
@@ -201,19 +325,26 @@ header a:hover{
 }*/
 
 /* footer style */
+hr{
+  border:0;
+  border-top: 1px solid #eee;
+}
 footer{
-  /*margin-top: 20px;*/
+  /*background-color: blue;*/
+}
+#graphic_footer{
+  margin-top: 100px;
 }
 .footer_img{
   width: 25px;
   height: 25px;
-  margin: 0 15px;
+  margin: 15px 15px;
   opacity: 0.8;
 }
 .copyright{
   text-align: right;
   float: right;
-
+  font-size: 12px;
 }
 
 /* slide show*/
@@ -241,6 +372,8 @@ footer{
   /*line-height: 10%;*/
   vertical-align: middle;
   padding: 0.75%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .floating:hover{
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
@@ -297,22 +430,28 @@ footer{
 
 /*responsive design*/
 @media only screen and (max-width: 800px){
-  .nav li{display: none;}
+  .nav li a{display: none;}
   .nav_bread{display: inline-block;}
   .bread_img, .logo_img{
     width: 30px;
     height: 30px;
   }
+  header, footer, section{
+    padding: 0px 5%;
+  }
+  header{height: 60px;}
   .page_des h1{font-size: 28px;}
   .page_des p{font-size: 14px;}
-  .right{font-size: 28px;}
+  .right{font-size: 24px;}
+  /*.nav a.bold{display: inline-block;}*/
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
   .nav_bread{display: inline-block;}
   .bread_img, .logo_img{
     width: 25px;
     height: 25px;
   }
+  header{height: 55px;}
   .page_des h1{
     font-size: 20px;
     width: 100%;
@@ -326,7 +465,17 @@ footer{
   }
   .half, .main_des{width: 100%;}
   .main_des{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
   }
-
+}
+.back_main{
+  width: 100%;
+  height: 90px;
+}
+.back_main a{
+  text-align: center;
+  line-height: 90px;
+  position: absolute;
+  left:0;
+  right:0;
 }
